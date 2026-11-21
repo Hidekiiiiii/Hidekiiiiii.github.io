@@ -84,7 +84,7 @@
         <span class="legenda">anos em controladoria</span>
       </li>
       <li class="num-cartao">
-        <strong><span data-contar="3">3</span></strong>
+        <strong><span data-contar="4">4</span></strong>
         <span class="legenda">projetos publicados no GitHub</span>
       </li>
       <li class="num-cartao">
@@ -220,7 +220,7 @@
     <div class="secao-cabeca">
       <p class="rotulo">// Projetos pessoais</p>
       <h2 class="embaralha">O que construí</h2>
-      <p class="sub">Problemas reais de controladoria, com dados fictícios. Clique em um projeto para ver os detalhes.</p>
+      <p class="sub">Problemas reais de controladoria, com dados fictícios ou públicos. Clique em um projeto para ver os detalhes.</p>
     </div>
 
     <div class="cartoes">
@@ -278,6 +278,25 @@
           <a class="link" href="https://github.com/Hidekiiiiii/painel-controladoria-streamlit" target="_blank" rel="noopener">Ver no GitHub →</a>
         </div>
       </article>
+
+      <article class="cartao" id="projeto-benchmark" tabindex="0" role="button" aria-haspopup="dialog">
+        <span class="tag">Python + DuckDB</span>
+        <span class="titulo">Capital de giro no varejo</span>
+        <span class="desc">Pipeline que baixa os balanços de 24 varejistas da bolsa na CVM, confere a qualidade e cruza com a Selic do Banco Central.</span>
+        <span class="numero"><span data-contar="5.5" data-casas="1">5,5</span>%</span>
+        <span class="resumo">da receita é o custo de carregar o giro em moda, contra 13,1% de margem EBIT</span>
+        <span class="abrir">Ver detalhes →</span>
+        <div class="detalhe">
+          <img src="img/benchmark-custo-giro.jpg" width="800" height="416" alt="Gráfico por segmento: margem EBIT contra o custo do capital de giro à Selic, em % da receita, 2025">
+          <dl>
+            <dt>Problema</dt><dd>Quanto do lucro operacional o capital de giro consome quando o juro sobe?</dd>
+            <dt>O que fiz</dt><dd>ETL com dados públicos: 1,9 milhão de linhas da CVM (2015–2025) e séries do Banco Central, tratadas em SQL no DuckDB, com regras de qualidade e 10 testes.</dd>
+            <dt>Resultado</dt><dd>Com a Selic baixa, o ciclo de caixa mediano subiu de 49 para 70 dias; com o juro alto, voltou a 45. Em moda, carregar o giro custa 5,5% da receita.</dd>
+            <dt>Ferramentas</dt><dd>Python · DuckDB · SQL · matplotlib</dd>
+          </dl>
+          <a class="link" href="https://github.com/Hidekiiiiii/benchmark-varejo-cvm" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -302,7 +321,7 @@
 
 </main>
 
-<footer class="rodape">© 2026 Victor Hideki · Os projetos usam dados fictícios.</footer>
+<footer class="rodape">© 2026 Victor Hideki · Os projetos usam dados fictícios ou públicos.</footer>
 
 <dialog class="modal" aria-label="Detalhes do projeto"></dialog>
 

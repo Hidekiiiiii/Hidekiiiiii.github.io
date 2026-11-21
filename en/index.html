@@ -84,7 +84,7 @@
         <span class="legenda">years in financial controlling</span>
       </li>
       <li class="num-cartao">
-        <strong><span data-contar="3">3</span></strong>
+        <strong><span data-contar="4">4</span></strong>
         <span class="legenda">projects published on GitHub</span>
       </li>
       <li class="num-cartao">
@@ -220,7 +220,7 @@
     <div class="secao-cabeca">
       <p class="rotulo">// Personal projects</p>
       <h2 class="embaralha">What I've built</h2>
-      <p class="sub">Real controlling problems, with synthetic data. Click a project to see the details.</p>
+      <p class="sub">Real controlling problems, with synthetic or public data. Click a project to see the details.</p>
     </div>
 
     <div class="cartoes">
@@ -278,6 +278,25 @@
           <a class="link" href="https://github.com/Hidekiiiiii/painel-controladoria-streamlit" target="_blank" rel="noopener">See on GitHub (in Portuguese) →</a>
         </div>
       </article>
+
+      <article class="cartao" id="projeto-benchmark" tabindex="0" role="button" aria-haspopup="dialog">
+        <span class="tag">Python + DuckDB</span>
+        <span class="titulo">Retail working capital</span>
+        <span class="desc">A pipeline that pulls the financial statements of 24 listed retailers from the CVM, checks data quality and crosses them with the central bank's Selic rate.</span>
+        <span class="numero"><span data-contar="5.5" data-casas="1" data-sep=".">5.5</span>%</span>
+        <span class="resumo">of revenue is the cost of carrying working capital in fashion, against a 13.1% EBIT margin</span>
+        <span class="abrir">See details →</span>
+        <div class="detalhe">
+          <img src="../img/benchmark-custo-giro.jpg" width="800" height="416" alt="Chart by segment (in Portuguese): EBIT margin against the cost of working capital at the Selic rate, as % of revenue, 2025">
+          <dl>
+            <dt>Problem</dt><dd>How much of operating profit does working capital eat up when interest rates rise?</dd>
+            <dt>What I did</dt><dd>ETL on public data: 1.9 million rows from the CVM (2015–2025) and central bank series, transformed in SQL with DuckDB, with quality rules and 10 tests.</dd>
+            <dt>Result</dt><dd>With low rates, the median cash conversion cycle rose from 49 to 70 days; with high rates, it fell back to 45. In fashion, carrying working capital costs 5.5% of revenue.</dd>
+            <dt>Tools</dt><dd>Python · DuckDB · SQL · matplotlib</dd>
+          </dl>
+          <a class="link" href="https://github.com/Hidekiiiiii/benchmark-varejo-cvm" target="_blank" rel="noopener">See on GitHub (in Portuguese) →</a>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -302,7 +321,7 @@
 
 </main>
 
-<footer class="rodape">© 2026 Victor Hideki · Projects use synthetic data.</footer>
+<footer class="rodape">© 2026 Victor Hideki · Projects use synthetic or public data.</footer>
 
 <dialog class="modal" aria-label="Project details"></dialog>
 
