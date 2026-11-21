@@ -84,7 +84,7 @@
         <span class="legenda">years in financial controlling</span>
       </li>
       <li class="num-cartao">
-        <strong><span data-contar="4">4</span></strong>
+        <strong><span data-contar="5">5</span></strong>
         <span class="legenda">projects published on GitHub</span>
       </li>
       <li class="num-cartao">
@@ -224,6 +224,26 @@
     </div>
 
     <div class="cartoes">
+      <article class="cartao destaque" id="projeto-caixa" tabindex="0" role="button" aria-haspopup="dialog">
+        <span class="tag">Python + FastAPI</span>
+        <span class="titulo">13-week cash forecast</span>
+        <span class="desc">Forecasts the bank balance week by week from open invoices and how each type of customer pays. Tested against the past, with an API and a page to simulate payment delays.</span>
+        <span class="numero"><span data-contar="22">22</span> days</span>
+        <span class="resumo">of extra delay from public hospitals is what cash can absorb before it drops below the minimum</span>
+        <span class="abrir">See details →</span>
+        <img class="capa" src="../img/previsao-caixa.jpg" width="960" height="726" alt="" loading="lazy">
+        <div class="detalhe">
+          <img src="../img/previsao-caixa.jpg" width="960" height="726" alt="Forecast page (in Portuguese): alert of 5 weeks below the minimum when public hospitals pay 30 days later">
+          <dl>
+            <dt>Problem</dt><dd>Know weeks in advance whether cash will drop below the minimum, and why.</dd>
+            <dt>What I did</dt><dd>Collection curves by segment (Kaplan-Meier, which accounts for invoices still open), calendar rules for payroll, 13th salary and taxes, a backtest on 31 past dates and a FastAPI API with a scenario page.</dd>
+            <dt>Result</dt><dd>At week 13, the forecast balance was off by R$ 1.3M on average, against R$ 5.9M for the spreadsheet that assumes customers pay on the due date.</dd>
+            <dt>Tools</dt><dd>Python · pandas · FastAPI · JavaScript</dd>
+          </dl>
+          <a class="link" href="https://github.com/Hidekiiiiii/previsao-caixa-13-semanas" target="_blank" rel="noopener">See on GitHub (in Portuguese) →</a>
+        </div>
+      </article>
+
       <article class="cartao" id="projeto-sql" tabindex="0" role="button" aria-haspopup="dialog">
         <span class="tag">SQL</span>
         <span class="titulo">Budget vs. actual</span>

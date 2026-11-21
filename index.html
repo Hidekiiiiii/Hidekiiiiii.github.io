@@ -84,7 +84,7 @@
         <span class="legenda">anos em controladoria</span>
       </li>
       <li class="num-cartao">
-        <strong><span data-contar="4">4</span></strong>
+        <strong><span data-contar="5">5</span></strong>
         <span class="legenda">projetos publicados no GitHub</span>
       </li>
       <li class="num-cartao">
@@ -224,6 +224,26 @@
     </div>
 
     <div class="cartoes">
+      <article class="cartao destaque" id="projeto-caixa" tabindex="0" role="button" aria-haspopup="dialog">
+        <span class="tag">Python + FastAPI</span>
+        <span class="titulo">Previsão de caixa de 13 semanas</span>
+        <span class="desc">Prevê o saldo semana a semana a partir das faturas em aberto e de como cada tipo de cliente paga. Testada contra o passado, com API e uma página para simular atrasos.</span>
+        <span class="numero"><span data-contar="22">22</span> dias</span>
+        <span class="resumo">de atraso extra dos hospitais públicos é o que o caixa aguenta antes de furar o mínimo</span>
+        <span class="abrir">Ver detalhes →</span>
+        <img class="capa" src="img/previsao-caixa.jpg" width="960" height="726" alt="" loading="lazy">
+        <div class="detalhe">
+          <img src="img/previsao-caixa.jpg" width="960" height="726" alt="Página da previsão: alerta de 5 semanas abaixo do mínimo quando os hospitais públicos atrasam 30 dias">
+          <dl>
+            <dt>Problema</dt><dd>Saber com semanas de antecedência se o caixa vai ficar abaixo do mínimo, e por quê.</dd>
+            <dt>O que fiz</dt><dd>Curvas de recebimento por segmento (Kaplan-Meier, que considera as faturas ainda em aberto), regras de calendário para folha, 13º e impostos, teste contra 31 datas do passado e uma API em FastAPI com página de cenários.</dd>
+            <dt>Resultado</dt><dd>Na 13ª semana, o saldo previsto errou em média R$ 1,3 mi, contra R$ 5,9 mi da planilha que supõe pagamento no vencimento.</dd>
+            <dt>Ferramentas</dt><dd>Python · pandas · FastAPI · JavaScript</dd>
+          </dl>
+          <a class="link" href="https://github.com/Hidekiiiiii/previsao-caixa-13-semanas" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </div>
+      </article>
+
       <article class="cartao" id="projeto-sql" tabindex="0" role="button" aria-haspopup="dialog">
         <span class="tag">SQL</span>
         <span class="titulo">Orçado × realizado</span>
